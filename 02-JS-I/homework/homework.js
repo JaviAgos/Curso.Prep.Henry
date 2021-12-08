@@ -28,7 +28,8 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  return 'str'
+  var devolverString = 'str';
+  return devolverString;
 }
 
 function suma(x, y) {
@@ -112,18 +113,22 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 1 === 0) {
-    return true
-  } return false;
+  if (num % 2 === 0) {
+      return true;
+  } else {
+    return false;
+  }
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 1 === 1) {
+  if (num % 2 === 1) {
     return true;
-  } return false;
+  } else {
+    return false;
+  }
 }
 
 function elevarAlCuadrado(num) {
@@ -144,7 +149,7 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  var elevar = num * exponent;
+  var elevar = Math.pow(num, exponent);
   return elevar;
 }
 
@@ -175,9 +180,9 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (num > 0) {
-    return 'Es positivo'
+    return 'Es positivo';
   } else if (num < 0) {
-    return 'Es negativo'
+    return 'Es negativo';
   } else {
     return false;
   }
@@ -187,7 +192,8 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  var agregaSimbolo = 'str' + '!';
+  var str = 'str';
+  var agregaSimbolo = str + '!';
   return agregaSimbolo;
 }
 
@@ -195,7 +201,9 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var combina = 'nombre' + ' ' + 'apellido';
+  var nombre;
+  var apellido;
+  var combina = nombre + ' ' + apellido;
   return combina;
 }
 
@@ -225,7 +233,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  var areaDelTriangulo = base * altura;
+  var areaDelTriangulo = base + altura;
   return areaDelTriangulo;
 }
 
@@ -236,7 +244,7 @@ function deEuroAdolar(euro){
   //Escribe tu código aquí
   var euro = 1;
   var dolar = euro * 1.20;
-  return dolar;
+  return euro;
 }
 
 
