@@ -124,11 +124,13 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
+  
   if (num % 2 === 1) {
     return true;
   } else {
     return false;
   }
+  // (num % 2 !== 0) Es más preciso
 }
 
 function elevarAlCuadrado(num) {
@@ -144,13 +146,19 @@ function elevarAlCubo(num) {
   // Tu código:
   var cubo = Math.pow(num, 3);
   return cubo;
+  // return num * num * num 
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  var elevar = Math.pow(num, exponent);
-  return elevar;
+
+  //var elevar = Math.pow(num, exponent);
+  //return elevar;
+  var expo = 1;
+  for (var i = 0; i < exponent; i++) {
+    expo = expo * num;
+  } return expo;
 }
 
 function redondearNumero(num) {
@@ -233,10 +241,9 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  var base;
-  var altura;
   var areaDelTriangulo = base * altura / 2;
   return areaDelTriangulo;
+  // return (base * altura) / 2
 }
 
 
@@ -246,6 +253,8 @@ function deEuroAdolar(euro){
   //Escribe tu código aquí
   var dolar = euro * 1.20;
   return dolar;
+
+  // return euro * 1.20
 }
 
 
@@ -255,10 +264,15 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra === 'a' || 'e' || 'i' || 'o' || 'u') {
-    return 'Es vocal';
-  } else if (letra.length >= 2) {
+  if (letra.length > 1) {
     return 'Dato incorrecto';
+  }
+  if ( letra === 'a' || letra === 'A' ||
+       letra === 'e' || letra === 'E' ||
+       letra === 'i' || letra === 'I' ||
+       letra === 'o' || letra === 'O' ||
+       letra === 'u' || letra === 'U' ) {
+    return 'Es vocal';
   } else {
     return 'Dato incorrecto';
   }
