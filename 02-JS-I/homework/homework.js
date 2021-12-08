@@ -192,9 +192,9 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  var str = 'str';
-  var agregaSimbolo = str + '!';
-  return agregaSimbolo;
+  var str = "Hola";
+  var nuevaStr = str + "!";
+  return nuevaStr;
 }
 
 function combinarNombres(nombre, apellido) {
@@ -233,6 +233,8 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
+  var base;
+  var altura;
   var areaDelTriangulo = base + altura;
   return areaDelTriangulo;
 }
