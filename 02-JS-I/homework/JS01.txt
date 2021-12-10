@@ -1,0 +1,38 @@
+Homework1 - Definiciones:
+Variable:
+	Una variable es un contenedor de valores.  Se pueden utilizar tres keywords para declararlas, var, let ó const.  
+	Luego se la nombra con un identificador. Para nombrarla se puede usar cualquier expresión, 
+    recordando que distingue entre mayúsculas y minúsculas. 
+    Pero no pueden ser usadas como nombre de variable ninguna keyword.
+	Tras declarar la variable y nombrarla, se le puede asignar un valor con =. 
+
+Strings:
+	Un string es una cadena de texto, se escribe siempre  entre comillas, " " ó ' '. 
+    Cualquier caracter que se escriba entre comillas, pasará a ser una string, tanto un valor booleano como un número.
+
+Funciones (argumentos, return): 
+	Las funciones son bloques de código que ejecutan una tarea asignada, 
+    son un tipo de objeto denominado objeto invocable, 
+    por eso tienen características similares con los objetos.
+	Para declararlas hay varias formas, la más sencila es declarar la keyword de función, 
+    function seguido del  nombre  que le asigno a la función, el cual debe ser lo más descriptivo posible de la misma, 
+    y un paréntesis ( )  tras el nombre, seguido de { .. }. 
+	Entre paréntesis, puedo agregar el nombre de una variable, este nuevo parámetro, 
+    lo podré utilizar dentro de la función, y es lo que se denomina argumento, 
+    lo que me permite es  poder pasarle un valor a la función para ejecutar la tarea.
+	Pero, no es posible invocar a la función desde cualquier lugar en el código, 
+    las funciones tienen un alcance, denominado scope, es decir que para acceder al contenido 
+    y devolver algo de la función, debo usar la declaración return, dentro de la función. 
+    Cuando la función se encuentra con esta declaración, se detiene y retorna lo que se le pidió.
+
+Declaraciones if:
+	Es una declaración de control de flujo que recibe una condición y varias declaraciones a evaluar.
+	Si la primer declaración if devuelve true, esta se ejecutará, y se cortará la evaluación. 
+    Si no devuelve true, pasará a la siguiente declaración else, y ejecutará false.	
+	Es posible el caso de múltiples declaraciones, que incluyen else if, 
+    en este caso la evalución correrá hasta que una declaración devuelva true y allí se cortará 
+    y no evaluará las siguientes.
+
+Valores booleanos (true, false):
+	Los valores booleanos son tipos de datos primitivos, (como lo son strings, numbers, etc) 
+    y tienen dos valores, true ó false.
