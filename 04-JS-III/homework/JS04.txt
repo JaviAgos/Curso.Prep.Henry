@@ -1,0 +1,15 @@
+Homework4: Definiciones:
+
+Array:
+
+    - Un array es una lista de valores, a diferencia de una variable que sólo puede contener un valor,
+    de un tipo de dato específico, dentro de un arreglo podemos colocar varios valores, 
+    separados por coma, de distinto tipo. Esto es dentro de un array podemos tener una string, un numero,
+    o también un booleano.
+
+    - La cantidad de elementos dentro del array pueden variar, se pueden adicionar nuevos valores, como
+    pueden quitarse, ó modificarse.
+
+    - Los arrays tienen un indice por el cual podemos invocar los valores que llevan dentro, y este
+    índice siempre comienza en 0. Es decir, que el primer elemento del array va a tener un índice 0,
+    el segundo, 1, y así sucesivamente.
