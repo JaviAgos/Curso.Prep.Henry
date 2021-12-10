@@ -1,0 +1,47 @@
+Homework2: Definiciones:
+
+for:
+La declaración for crea un bucle que se ejecutará mientras que la expresión condicional que le brindamos sea verdadera. 
+El blucle está compuesto por la keyword for seguida de un paréntesis ( ), con tres expresiones, 
+seguida de { } donde colocamos las declaraciones.
+Su sintaxis es así:  
+	for ( let  i = 0; i < 10; i++) {
+ 		console.log(i);
+	}
+Dentro del paréntesis, la primer parte le damos un valor de inicio a la variable con la que desarrollaremos el bucle, 
+separamos con punto y coma, y declaramos la expresión condicional que definirá el período durante el cual 
+el bucle se ejecutará, en el ejemplo mientras i sea menor que 9, devolverá true, por lo que ocntinuará ejecutándose, 
+cuando i sea mayor ó igual a 9, la condición devolverá false, por lo que el bucle cesará su ejecución. 
+Por último, si se inicia el bucle y la condición devuelve true, 
+definimos el incremento que tendrá el valor de la variable, i++, 
+esto significa que el valor de la variable va a ser su valor actual incrementado en uno, 
+y tras esto el bucle se reiniciará, volverá a ejecutarse.
+
+&&, ||, !:
+Las siguientes expresiones son operadores lógicos, funcionan dentro del código para realizar comparación 
+y brindar una respuesta boleana.
+&&
+El primero, denominado AND (Y), se escribe &&, analiza cada expresión a comparar, y devolverá true, 
+si AMBAS expresiones son verdaderas, con que solo una sea falsa, devolverá false.
+Por ejemplo:
+	( 25 === 25   &&   10 > 2 ) -----> Devuelve true porque ambas son verdaderas
+	( 100 < 50  &&   10 === 10 ) ----> Devuelve false porque una de las exp es falsa
+
+||
+
+El siguiente operador lógico es OR (Ó), se escribe con doble barra vertical, ||
+En este caso, para que la expresión devuleva true, basta con que uno ó ambos sean verdaderos. 
+Devolverá false, cuando AMBAS sea falsas.
+Por ejemplo: 
+	( 10 === 10 || 'Cat' === 'Dog' ) ----> Devolverá true, porque una exp es verdadera
+	( 5 > 50 || true === false ) ----> Devolverá false, ambas exp son falsas 
+
+!
+
+Por último, el operador NOT ( ! ), siempre devolverá un valor booleano que será el opuesto al que la expresión devuelve, 
+e incluso hará una 'coerción de tipo' que significa que si el tipo de dato que recibe no es booleana, lo convertirá. 
+Se llama a esto truthy ó falsey. 
+Por ejemplo: 
+	(!true) ----> Devolverá false
+	(!'Cat') ----->Devolverá false
+	(!(10<5))---->Devolverá true
